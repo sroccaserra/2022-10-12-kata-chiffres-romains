@@ -14,7 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Pro tip : quand on n'a plus d'idées pendant 5 secondes, on a terminé notre
  * première todolist.
  *
- * Quatrième étape : Boucle infinie :
+ * Quatrième étape = boucle infinie :
+ * - Je réfléchis à ce que je veux faire
  * - J'écris un micro test
  * - Je le vois échouer (les tests sont rouges)
  * - J'écris l'implémentation pour le faire passer
