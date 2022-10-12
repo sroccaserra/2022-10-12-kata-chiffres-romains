@@ -33,6 +33,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Si les conversations métier sont en fr, nommer les objets métier en fr est intéressant.
  * Par contre, les notions tech sont plutôt en anglais (repository, query response HTTP).
  *
+ * Raisonnement pour ajouter le bon nombre de I :
+ * si i = 1, le bon nombre de bâtons c'est 1
+ *        2                                2
+ *        3                                3
+ *        4                                x
+ *        5                                0 = 5 - 5
+ *        6                                1 = 6 - 5
+ *        7                                2 = 7 - 5
+ *
+ * Refactoring : on améliore l'implémentation *sans changer le comportement*.
+ * Si nos tests sont bien écrits, les test ne changent.
+ *
  * ## Problème
  *
  * Je veux écire un programme qui prend en argument un entier,
