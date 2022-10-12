@@ -13,11 +13,11 @@ public class ConvertisseurDeChiffresRomains {
             nombre = nombre - 5;
         }
 
-        ajouteLesBatonsÀDroite(nombre, result);
+        ajouterLesBatonsÀDroite(nombre, result);
         return result.toString();
     }
 
-    private void ajouteLesBatonsÀDroite(int nombre, StringBuilder result) {
+    private void ajouterLesBatonsÀDroite(int nombre, StringBuilder result) {
         for (int i = 0; i < nombre; ++i) {
             result.append("I");
         }
