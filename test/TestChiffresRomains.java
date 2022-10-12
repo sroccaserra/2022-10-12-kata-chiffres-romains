@@ -10,7 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Deuxième étape : voir un message d'erreur
  * Je peux commencer à réfléchir au problème
  *
- * Troisième étape : j'écris une todolist pour résoudre mon problème, sous forme d'exemples concrets.
+ * Troisième étape : j'écris une todolist pour résoudre mon problème, sous
+ * forme d'exemples concrets.
  * Pro tip : quand on n'a plus d'idées pendant 5 secondes, on a terminé notre
  * première todolist.
  *
@@ -18,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * - Je réfléchis à ce que je veux faire
  * - J'écris un micro test
  * - Je le vois échouer (les tests sont rouges)
- * - J'écris l'implémentation pour le faire passer
+ * - J'écris l'implémentation la plus simple possible pour le faire passer
  * - Une fois que les tests sont verts, j'améliore ce que je peux dans mon code
  * - goto début...
  *
@@ -28,11 +29,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  *
  * ## Commentaires
  *
- * JUnit peut trouver le test car j'ai mis l'annotation @Test
+ * JUnit peut trouver le test car j'ai mis l'annotation @Test.
+ *
  * Question d'équipe : on code en anglais ou en français ?
  * Dans quelle langue se passent nos conversations métier ?
- * Si les conversations métier sont en fr, nommer les objets métier en fr est intéressant.
- * Par contre, les notions tech sont plutôt en anglais (repository, query response HTTP).
+ * Si les conversations métier sont en fr, nommer les objets métier en fr est
+ * intéressant. Par contre, les notions tech sont plutôt en anglais
+ * (repository, query response HTTP).
  *
  * Raisonnement pour ajouter le bon nombre de I :
  * si i = 1, le bon nombre de bâtons c'est 1
@@ -53,27 +56,27 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * - It communicates across the network
  * - It touches the file system
  * - It can’t run at the same time as any of your other unit tests
- * - You have to do special things to your enviroment (such as editing config files)
- *   to run it”
+ * - You have to do special things to your enviroment (such as editing config
+ *   files) to run it”
  *
- * Les tests d'intégration sont plus compliqués à écrire, plus long à lancer, on en a
- * besoin mais on écrit moins. On a besoin de connaître certains patterns qui nous
- * permettent d'en écrire moins tout en gardant confiance (Inversion de dépandances
- * sur les sources de données).
+ * Les tests d'intégration sont plus compliqués à écrire, plus long à lancer,
+ * on en a besoin mais on en écrit moins. On a besoin de connaître certains
+ * patterns qui nous permettent d'en écrire moins tout en gardant confiance
+ * (Inversion de dépandances sur les sources de données).
  *
- * Tests d'acceptances : si on veut, on peut avoir un faux navigateur pilotés par les tests,
- * une plateforme complète avec serveur Web, sources de données lancée, et mes tests vont
- * s'exécuter sur ma plateforme à travers mon navigateur headless piloté par mon framework
- * de test. Selenium, Cypress, ...
- * On en a besoin, mais ils sont coûteux. Comment est-ce qu'on peut éviter d'en avoir trop à
- * écrire.
+ * Tests d'acceptances : si on veut, on peut avoir un faux navigateur piloté
+ * par les tests, une plateforme complète avec serveur Web, les sources de
+ * données lancée, et mes tests vont s'exécuter sur ma plateforme à travers mon
+ * navigateur headless piloté par mon framework de test. Selenium, Cypress, ...
+ * On en a besoin, mais ils sont coûteux. Comment est-ce qu'on peut éviter d'en
+ * avoir trop à écrire.
  *
- * - https://blog.octo.com/la-pyramide-des-tests-par-la-pratique-1-5/
+ * - <https://blog.octo.com/la-pyramide-des-tests-par-la-pratique-1-5/>
  *
  * ## Problème
  *
- * Je veux écire un programme qui prend en argument un entier,
- * et qui renvoit en sortie ce nombre en chiffre romains.
+ * Je veux écire un programme qui prend en argument un entier, et qui renvoit
+ * en sortie ce nombre en chiffre romains.
  *
  * On aimerait que notre code fonctionne au moins jusqu'à 2022.
  *
