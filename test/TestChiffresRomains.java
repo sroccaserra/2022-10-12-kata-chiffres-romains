@@ -99,7 +99,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestChiffresRomains {
     @Test
-    public void testVérifiePour1() {
+    public void vérifiePour1() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
@@ -109,7 +109,7 @@ public class TestChiffresRomains {
     }
 
     @Test
-    public void testVérifiePour2() {
+    public void vérifiePour2() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
@@ -119,7 +119,7 @@ public class TestChiffresRomains {
     }
 
     @Test
-    public void testVérifiePour3() {
+    public void vérifiePour3() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
@@ -129,7 +129,7 @@ public class TestChiffresRomains {
     }
 
     @Test
-    public void testVérifiePour4() {
+    public void vérifiePour4() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
@@ -139,7 +139,7 @@ public class TestChiffresRomains {
     }
 
     @Test
-    public void testVérifiePour5() {
+    public void vérifiePour5() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
@@ -149,7 +149,7 @@ public class TestChiffresRomains {
     }
 
     @Test
-    public void testVérifiePour6() {
+    public void vérifiePour6() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
@@ -159,7 +159,7 @@ public class TestChiffresRomains {
     }
 
     @Test
-    public void testVérifiePour7() {
+    public void vérifiePour7() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
@@ -169,7 +169,7 @@ public class TestChiffresRomains {
     }
 
     @Test
-    public void testVérifiePour8() {
+    public void vérifiePour8() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
@@ -179,7 +179,7 @@ public class TestChiffresRomains {
     }
 
     @Test
-    public void testVérifiePour9() {
+    public void vérifiePour9() {
         // Given
         ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
         // When
