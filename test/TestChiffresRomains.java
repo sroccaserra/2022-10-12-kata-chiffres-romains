@@ -45,6 +45,30 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Refactoring : on améliore l'implémentation *sans changer le comportement*.
  * Si nos tests sont bien écrits, les test ne changent.
  *
+ * ## Test unitaire
+ *
+ * Michael Feathers, test is not a unit test if:
+ * - It talks to the database
+ * - It communicates across the network
+ * - It touches the file system
+ * - It can’t run at the same time as any of your other unit tests
+ * - You have to do special things to your enviroment (such as editing config files)
+ *   to run it”
+ *
+ * Les tests d'intégration sont plus compliqués à écrire, plus long à lancer, on en a
+ * besoin mais on écrit moins. On a besoin de connaître certains patterns qui nous
+ * permettent d'en écrire moins tout en gardant confiance (Inversion de dépandances
+ * sur les sources de données).
+ *
+ * Tests d'acceptances : si on veut, on peut avoir un faux navigateur pilotés par les tests,
+ * une plateforme complète avec serveur Web, sources de données lancée, et mes tests vont
+ * s'exécuter sur ma plateforme à travers mon navigateur headless piloté par mon framework
+ * de test. Selenium, Cypress, ...
+ * On en a besoin, mais ils sont coûteux. Comment est-ce qu'on peut éviter d'en avoir trop à
+ * écrire.
+ *
+ * - https://blog.octo.com/la-pyramide-des-tests-par-la-pratique-1-5/
+ *
  * ## Problème
  *
  * Je veux écire un programme qui prend en argument un entier,
@@ -57,6 +81,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 3 -> III
  * 4 -> IV
  * 5 -> V
+ *
+ * 9 -> IX
+ *
+ * 14 -> XIV
+ *
+ * 19 -> XIX
+ *
  * ...
  * 2022 -> MMXXII
  *
@@ -121,5 +152,35 @@ public class TestChiffresRomains {
         String résultat = convertisseur.convertirEnChiffresRomains(6);
         // Then
         assertEquals("VI", résultat);
+    }
+
+    @Test
+    public void testVérifiePour7() {
+        // Given
+        ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
+        // When
+        String résultat = convertisseur.convertirEnChiffresRomains(7);
+        // Then
+        assertEquals("VII", résultat);
+    }
+
+    @Test
+    public void testVérifiePour8() {
+        // Given
+        ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
+        // When
+        String résultat = convertisseur.convertirEnChiffresRomains(8);
+        // Then
+        assertEquals("VIII", résultat);
+    }
+
+    @Test
+    public void testVérifiePour9() {
+        // Given
+        ConvertisseurDeChiffresRomains convertisseur = new ConvertisseurDeChiffresRomains();
+        // When
+        String résultat = convertisseur.convertirEnChiffresRomains(9);
+        // Then
+        assertEquals("IX", résultat);
     }
 }

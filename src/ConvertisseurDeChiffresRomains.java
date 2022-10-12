@@ -3,6 +3,9 @@ public class ConvertisseurDeChiffresRomains {
         if (nombre == 4) {
             return "IV";
         }
+        if (nombre == 9) {
+            return "IX";
+        }
 
         StringBuilder result = new StringBuilder();
         if (nombre >= 5) {
@@ -10,11 +13,11 @@ public class ConvertisseurDeChiffresRomains {
             nombre = nombre - 5;
         }
 
-        ajouteLesBatons(nombre, result);
+        ajouteLesBatonsÀDroite(nombre, result);
         return result.toString();
     }
 
-    private void ajouteLesBatons(int nombre, StringBuilder result) {
+    private void ajouteLesBatonsÀDroite(int nombre, StringBuilder result) {
         for (int i = 0; i < nombre; ++i) {
             result.append("I");
         }
